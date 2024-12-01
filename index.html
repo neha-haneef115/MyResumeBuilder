@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/css/intlTelInput.css"
+    />
+    <title>Static Interactive Resume Builder</title>
+  </head>
+
+  <body>
+    <img
+    src="aesthetic-computer-4k-2o1einarkegqjjj5.jpg"
+    class="mainImg"
+    alt=""
+  />
+    <section>
+    
+      <div class="main">
+        <div class="mainhead">Resume Builder</div>
+
+        <div class="upload-container">
+          <div class="image-circle">
+            <h6>+ Upload Your Image</h6>
+          </div>
+          <input type="file" id="image-input" accept="image/*" />
+        </div>
+
+        <div class="content1">
+          <div class="con-1">
+            <div class="text">Full Name*</div>
+            <input
+              type="text"
+              id="name"
+              placeholder="Enter your name"
+              class="box1"
+              required
+            />
+          </div>
+
+          <div class="con-1">
+            <div class="text phone-input">Contact Details*</div>
+            <input
+              type="number"
+              id="phone"
+              placeholder="Enter your Phone number"
+              class="box1"
+              required
+            />
+          </div>
+        </div>
+
+        <div class="content2">
+          <div class="con-2">
+            <div class="text2">Education*</div>
+            <textarea
+              placeholder="Write your educational details"
+              id="education"
+              class="box2"
+              required
+            ></textarea>
+          </div>
+
+
+          <div class="con-2">
+            <div class="text2">Skills*</div>
+            <div
+              id="skills"
+              class="skills"
+              contenteditable="true"
+              placeholder="Add maximum 5 skills"
+              role="textbox"
+              aria-required="true"
+            ></div>
+          </div>
+          
+          
+        </div>
+
+        <div class="con-3">
+          <div class="text3">Work Experience*</div>
+          <textarea
+            placeholder="Write details about your work experience"
+            id="experience"
+            class="box3"
+            required
+          ></textarea>
+        </div>
+
+        <div class="con-4" id="certification1">
+          <div class="text5">Certification</div>
+          <textarea
+            placeholder="Write details about your Courses & Certifications"
+            id="certification"
+            class="box4"
+          ></textarea>
+        </div>
+
+        <div class="con-5" id="summary1">
+          <div class="text6">Summary</div>
+          <textarea
+            placeholder="Write short summary of your objectives"
+            id="summary"
+            class="box5"
+          ></textarea>
+        </div>
+
+        <div class="content1">
+          <div class="con-1" id="email1">
+            <div class="text">Email</div>
+            <input
+              type="email"
+              id="email"
+              placeholder="Enter your email"
+              class="box1"
+            />
+          </div>
+
+          <div class="con-1" id="country1">
+            <div class="text">Country</div>
+            <input
+              type="text"
+              id="country"
+              placeholder="Select your country name"
+              class="box1"
+            />
+          </div>
+        </div>
+
+        <div class="content1">
+          <div class="con-1" id="language1">
+            <div class="text">Languages</div>
+            <div id="languageBox" class="box1" contenteditable="true"></div>
+          </div>
+
+          <div class="con-1" id="postalcode1">
+            <div class="text">Postal Code</div>
+            <input
+              type="number"
+              id="postalcode"
+              placeholder="Enter your postal code"
+              class="box1"
+            />
+          </div>
+        </div>
+
+        <div class="con-5" id="address1">
+          <div class="text6">Address</div>
+          <textarea
+            placeholder="Write your address"
+            id="address"
+            class="box5"
+          ></textarea>
+        </div>
+
+        <div class="optional">
+          <div class="text4">Add more sections: (Optional)</div>
+          <div class="oursect0">
+            <div class="oursect" id="sect1">Certification <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect2">Language <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect3">Summary <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect4">Country <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect5">Email <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect6">Address <i class="bx bx-plus"></i></div>
+            <div class="oursect" id="sect7">Postal code <i class="bx bx-plus"></i></div>
+          </div>
+        </div>
+
+        <button type="button" id="download" class="download">
+          Generate Resume <i class="bx bxs-cog"></i>
+        </button>
+      </div>
+    </section>
+  </body>
+  <script src="main.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/intlTelInput.min.js"></script>
+  <script>
+    const input = document.querySelector("#phone");
+    intlTelInput(input, {
+      initialCountry: "us",
+      preferredCountries: ["us", "gb", "pk", "in"],
+      utilsScript: "https://cdnjs.cloudflare.com/ajax/libs/intl-tel-input/17.0.19/js/utils.js",
+    });
+  </script>
+  <script src="skillsnullet.js"></script>
+</html>

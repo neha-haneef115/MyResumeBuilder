@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Resume</title>
+    <link rel="stylesheet" href="myresume.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/boxicons/2.1.1/css/boxicons.min.css"
+    />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet"
+    />
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.9.3/html2pdf.bundle.min.js"></script>
+  </head>
+  <body>
+    <!-- Section Start -->
+    <section>
+      <div class="main-heading">
+        <h1>Your Resume has been generated<i class='bx bx-happy-heart-eyes'></i></h1>
+      </div>
+
+      <div class="change-color">
+        <div class="color" id="color1"></div>
+        <div class="color" id="color2"></div>
+        <div class="color" id="color3"></div>
+        <div class="color" id="color4"></div>
+      </div>
+
+      <div class="resume-template">
+        <div class="resume-header">
+          <div class="name1">
+            <div class="user-name" id="name"></div>
+            <div class="line"></div>
+          </div>
+
+          <!-- Image Circle with Profile Image -->
+          <div class="image-circle">
+            <img id="profile-image" src="" alt="Profile Image" />
+          </div>
+        </div>
+
+        <div class="grid7">
+          <!-- Contact Information -->
+          <div class="contact div">
+            <div class="heading">Contact</div>
+
+            <div class="phone con1">
+              <i class="bx bxs-phone"></i>
+              <div id="phone"></div>
+            </div>
+
+            <div class="email con2">
+              <i class="bx bxs-envelope"></i>
+              <div id="email"></div>
+            </div>
+
+            <div class="country con3">
+              <i class="bx bxs-map"></i>
+              <div id="country"></div>
+            </div>
+
+            <div class="postalcode con4" id="postalcode"></div>
+
+          </div>
+
+          <div class="mid-line div"></div>
+
+          <!-- Resume Summary Section -->
+          <div class="summary div">
+            <div class="heading">Summary</div>
+            <p class="summarypara paradiv" id="summary"></p>
+          </div>
+
+          <div class="mid-line1 div"></div>
+
+          <!-- Skills Section -->
+          <div class="skills">
+            <div class="heading">Skills</div>
+            <div class="paradiv">
+              <p class="skillspara" id="skills"></p>
+              <div class="mid-line2 div"></div>
+            </div>
+          </div>
+
+          
+
+          <!-- Experience Section -->
+          <div class="experience">
+            <div class="heading">Experience</div>
+            <div class="paradiv">
+            <p class="experiencepara" id="experience"></p>
+          <div class="mid-line3"></div>
+        </div>
+</div>
+          
+
+          <!-- Education Section -->
+          <div class="education">
+            <div class="heading">Education</div>
+            <div class="paradiv">
+              <p id="education" class="educationpara"></p>
+            </div>
+          </div>
+
+          <div class="mid-line4 div"></div>
+
+          <!-- Certification Section -->
+          <div class="certification">
+            <div class="heading">Certification</div>
+            <div class="paradiv">
+              <p class="certificationpara" id="certification"></p>
+            </div>
+            <div class="mid-line5 div"></div>
+          </div>
+
+          
+
+          <!-- Language Section -->
+          <div class="language">
+            <div class="heading">Language</div>
+            <div class="div">
+              <p class="languagepara" id="language"></p>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Download Button -->
+      <div class="btn">
+        <button type="button" class="download"><a href="index.html">Edit <i class='bx bx-edit-alt'></i></a></button>
+        <button type="button" class="download1">Download</button>
+      </div>
+    </section>
+    <!-- Section End -->
+
+    
+    <script src="myresume.js"></script>
+   
+
+  </body>
+</html>
